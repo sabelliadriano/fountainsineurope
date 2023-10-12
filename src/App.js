@@ -13,11 +13,15 @@ function App() {
   return (
     <div>
       <Navbar />
-       <img src="/marker.png" alt="Fountain Logo" class="logo-side"/>
-    <h1>Welcome To Fountain App</h1>
-    <img src="/marker.png" alt="Fountain Logo" class="logo-side"/>
-    <h2>An open-source platform dedicated to fountain enthusiasts</h2>
-    
+      <div className='ctr'>
+        <div className='title-container'>
+          <img src="/marker.png" alt="Fountain Logo" class="logo-side"/>
+          <h1>Welcome To Fountain App</h1>
+          <img src="/marker.png" alt="Fountain Logo" class="logo-side"/>
+        </div>
+        <h2>An open-source platform dedicated to fountain enthusiasts</h2>
+        
+      </div>
       <FontanaMap position = {position} fontane = {fontane} />
     </div>
   );

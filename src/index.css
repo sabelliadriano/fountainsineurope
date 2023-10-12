@@ -8,6 +8,23 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.ctr {
+  display: flex;
+  align-items: center; /* Centra gli elementi verticalmente */
+  justify-content: center; /* Centra gli elementi orizzontalmente */
+  height: 30vh; /* Altura dell'intera finestra del browser */
+  text-align: center;
+  flex-direction: column;
+}
+
+.title-container {
+  background: radial-gradient(transparent, rgba(4, 140, 124, 0.2)); 
+  
+  padding: 10px 30px; /* Spazio intorno al testo */
+  border-radius: 15px; /* Angoli smussati */
+  display: flex;
+  align-items: center; 
+}
 h1 {
   font-size: 3em;
   color: #0066FF; /* Blu come l'acqua della fontana */
@@ -46,7 +63,7 @@ h2 {
   align-items: center;
   padding: 1rem 2.5rem;
   background-color: white;
-  box-shadow: 0 2px 4px #048c7c;
+  box-shadow: 0 2px 4px white;
 }
 
 .logo img {
