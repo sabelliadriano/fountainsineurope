@@ -8,9 +8,86 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.title {
+  text-align: center;
+}
 /* Nel tuo file CSS */
 .leaflet-container {
   height: 400px;
   width: 100%;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  max-height: 40px;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.links a {
+  color: #333; /* un colore scuro per contrastare con lo sfondo bianco */
+  text-decoration: none;
+  font-weight: 500; /* un poco più in grassetto per maggiore visibilità */
+  transition: color 0.3s;
+  padding-bottom: 5px; /* piccolo padding per l'effetto hover */
+  position: relative;
+}
+
+.links a:hover {
+  color: #007bff; /* un colore blu come il logo per l'hover */
+}
+
+.links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #007bff; /* un colore blu come il logo */
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.links a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.search-bar {
+  width: 40%;
+  display: flex;
+  margin: 0 1.5rem;
+  margin-left:16%;
+}
+
+.search-bar input {
+  flex-grow: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px; 
+}
+
+.search-bar button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #0056b3;
 }

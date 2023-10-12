@@ -4,7 +4,7 @@ import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
 const fontanaIcon = new L.Icon({
-  iconUrl: process.env.PUBLIC_URL + '/fountain_icon_138551.png',
+  iconUrl: process.env.PUBLIC_URL + '/marker.png',
   iconSize: [32, 32], // dimensioni dell'icona
   iconAnchor: [16, 32], // punto dell'icona che corrisponderà esattamente alla posizione del marker
   popupAnchor: [0, -32] // punto da cui apparirà il popup
