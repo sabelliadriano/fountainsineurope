@@ -13,7 +13,11 @@ function App() {
   return (
     <div>
       <Navbar />
-      <h1 className='title'>Benvegnuti nell App fontanes!</h1>
+       <img src="/marker.png" alt="Fountain Logo" class="logo-side"/>
+    <h1>Welcome To Fountain App</h1>
+    <img src="/marker.png" alt="Fountain Logo" class="logo-side"/>
+    <h2>An open-source platform dedicated to fountain enthusiasts</h2>
+    
       <FontanaMap position = {position} fontane = {fontane} />
     </div>
   );

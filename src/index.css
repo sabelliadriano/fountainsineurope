@@ -8,14 +8,34 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.title {
+h1 {
+  font-size: 3em;
+  color: #0066FF; /* Blu come l'acqua della fontana */
+  font-weight: bold;
   text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+  padding-bottom: 10px;
+  transition: all 0.3s ease;
+  display:inline-block;
+}
+
+.logo-side {
+  width: 50px; /* puoi regolare le dimensioni del logo come preferisci */
+  vertical-align: middle; /* per allinearli verticalmente con l'h1 */
+}
+h2 {
+  font-size: 1.5em;
+  color: #048c7c; /* Verde come la base della fontana */
+  text-align: center;
+  margin-top: 10px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 /* Map style */
 .leaflet-container {
   border: 5px solid #007bff;  /* Un bordo blu di 5px */
   border-radius: 15px;        /* Angoli arrotondati */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Una leggera ombra per dare profondità */
+  box-shadow: 0 4px 8px #048c7c;  /* Una leggera ombra per dare profondità */
   width: 90% !important;                /* Larghezza a tutto schermo */
   height: 400px !important;              /* Puoi modificare l'altezza come preferisci */
   margin:0 auto;
@@ -26,11 +46,11 @@ body {
   align-items: center;
   padding: 1rem 2.5rem;
   background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px #048c7c;
 }
 
 .logo img {
-  max-height: 40px;
+  max-height: 96npm startpx;
 }
 
 .links {
@@ -39,7 +59,7 @@ body {
 }
 
 .links a {
-  color: #333; /* un colore scuro per contrastare con lo sfondo bianco */
+  color: #048c7c;; /* un colore scuro per contrastare con lo sfondo bianco */
   text-decoration: none;
   font-weight: 500; /* un poco più in grassetto per maggiore visibilità */
   transition: color 0.3s;
@@ -48,7 +68,7 @@ body {
 }
 
 .links a:hover {
-  color: #007bff; /* un colore blu come il logo per l'hover */
+  color: #007bff;/* un colore blu come il logo per l'hover */
 }
 
 .links a::after {
