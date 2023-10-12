@@ -11,10 +11,14 @@ body {
 .title {
   text-align: center;
 }
-/* Nel tuo file CSS */
+/* Map style */
 .leaflet-container {
-  height: 400px;
-  width: 100%;
+  border: 5px solid #007bff;  /* Un bordo blu di 5px */
+  border-radius: 15px;        /* Angoli arrotondati */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Una leggera ombra per dare profondità */
+  width: 90% !important;                /* Larghezza a tutto schermo */
+  height: 400px !important;              /* Puoi modificare l'altezza come preferisci */
+  margin:0 auto;
 }
 .navbar {
   display: flex;
